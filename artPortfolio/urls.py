@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from views import index
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
@@ -23,3 +24,4 @@ urlpatterns = [
     url(r'^$', index, name='main_home'),
     url(r'^portfolio/', include('portfolio.urls'))
 ]
+urlpatterns += staticfiles_urlpatterns()
