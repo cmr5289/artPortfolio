@@ -41,10 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-INSTALLED_APPS += [
-    'portfolio'
-]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -132,6 +128,6 @@ STATICFILES_DIRS = (
 )
 
 try:
-        from local_settings import *
+    from settings_local import *
 except ImportError:
-        pass
+    pass
