@@ -16,3 +16,6 @@ INSTALLED_APPS += [
     'portfolio',
     'capstone'
 ]
+
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/capstone/'

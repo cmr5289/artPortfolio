@@ -1,0 +1,25 @@
+* {
+    font-family: $font-stack;
+    color: $font-color;
+}
+
+h1{
+    color: $h1-color;
+}
+
+h2{
+    color: $h2-color;
+}
+
+h3{
+    color: $h3-color;
+}
+
+.body{
+    margin-left: 15%;
+    margin-right: 15%; 
+    @media screen and (max-width: $break-small){
+        margin-left: 1%;
+        margin-right: 1%; 
+    }
+}

@@ -1,0 +1,243 @@
+/**
+ * Chosen Widget Overrides
+ */
+.chosen-container .chosen-results li {
+    line-height: 1.3em;
+}
+
+.chosen-container-single .chosen-single {
+    height: 27px;
+}
+
+.chosen-container {
+    display: block;
+    font-size: 17px;
+}
+
+/**
+ * Basic forms
+ */
+label {
+    display: block;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.error_text {
+    display: block;
+}
+
+.help_text,
+.errorlist {
+    display: block;
+    font-size: .8em;
+    color: #666;
+}
+
+.help_text a,
+.error_text a {
+    text-decoration: none;
+}
+
+form .optional {
+    display: inline;
+    color: #666;
+    font-size: .9em;
+}
+
+form ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.form-ungap {
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+
+.errorlist,
+.error_text {
+    color: #d00;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.errorlist + p label {
+    color: #d00;
+    margin-bottom: 2px;
+}
+
+.form-errors {
+    padding: 15px 10px 0;
+    color: #d00;
+    margin: 0 0 20px 0;
+    border: solid 1px;
+}
+
+.form-errors ul {
+    list-style: disc outside;
+}
+
+.no-touch .timepicker + .help_text {
+    display: none;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+    color: #454545;
+}
+
+.form-ungap, #bodyCopy .form-ungap {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+/**
+ * Tuna Forms
+ */
+.tuna-form {
+
+}
+
+.tuna-max-width {
+    max-width: 450px;
+}
+
+.tuna-form .chosen-container-multi .chosen-choices li.search-field input[type="text"],
+.tuna-form input[type=text],
+.tuna-form input[type=email],
+.tuna-form input[type=tel],
+.tuna-form input[type=number],
+.tuna-form input[type=password],
+.tuna-form select,
+.tuna-form textarea {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 1px #b2b7bb;
+    height: auto;
+
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tuna-form .has-error_text {
+    background: hsla(25, 100%, 95%, .7);
+    margin-left: -10px;
+    padding: 10px;
+    margin-right: -10px;
+
+    -webkit-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+
+.tuna-form .real-label {
+    font-weight: bold;
+    font-size: .9em;
+    color: #373737;
+    display: block;
+}
+
+.tuna-form .error_text,
+.tuna-form .has-error_text label {
+    color: #d00;
+}
+
+.tuna-form textarea {
+    height: 120px;
+    padding: 10px;
+}
+
+.tuna-form .help_text {
+    display: block;
+    font-size: .8em;
+    color: #666;
+}
+
+.tuna-form .error_text {
+    display: block;
+}
+
+/**
+ * Lists of options
+ */
+.tuna-form .normal-form-list {
+
+}
+
+.tuna-form .normal-form-list ul,
+#bodyCopy .tuna-form .normal-form-list ul {
+    list-style: none;
+    margin: 0;
+    line-height: 1.4em;
+    padding: 0;
+}
+
+.tuna-form .normal-form-list li {
+    display: inline;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 .4em;
+    line-height: 1.5em;
+}
+
+.tuna-form .normal-form-list label {
+    display: inline;
+    display: inline-block;
+    margin: 0 2em 0 0;
+    padding: 0 0 0 1.3em;
+    position: relative;
+    line-height: 1.5em;
+}
+
+.tuna-form .normal-form-list input {
+    display: inline;
+    display: inline-block;
+    margin: 0;
+    vertical-align: text-top;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: .25em;
+}
+
+.tuna-form .normal-form-list input[type=checkbox] {
+    top: .1em;
+}
+
+/**
+ * Chosen Overrides
+ */
+
+.tuna-form .chosen-container-multi .chosen-choices li.search-choice {
+    padding: 6px 20px 6px 5px;
+}
+
+.tuna-form .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    top: 7px;
+}
+
+.tuna-form .chosen-container-multi .chosen-choices {
+    border-radius: 5px;
+}
+
+.tuna-form .chosen-container-multi .chosen-results li {
+    padding: 8px 6px;
+    line-height: 1.4em;
+}
+
+.js .tuna-form .chosen-container-multi + .help_text {
+    display: none;
+}
