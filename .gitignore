@@ -82,5 +82,11 @@ target/
 __pycache__/
 local_settings.py
 
+/static
+artPortfolio/static/css/.sass-cache
+
+
 .env
 db.sqlite3
+
+apps/

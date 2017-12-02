@@ -12,4 +12,8 @@ def home(request):
     """
     responseData = {
     }
-    return render(request, "portfolio/home.html", responseData)
+    return render(
+        request,
+        "portfolio/home.html",
+        responseData
+    )

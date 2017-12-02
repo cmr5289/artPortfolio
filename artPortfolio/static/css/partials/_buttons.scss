@@ -1,0 +1,14 @@
+button{
+  height: 50px;
+  // width: 100px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: $base-complement-dark;
+  color: $base-light;
+  font-size: 1.5em;
+  margin: 2% 0 2% 0
+}
+
+button:hover{
+    cursor: pointer;
+}

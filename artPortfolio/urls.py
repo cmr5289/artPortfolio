@@ -15,11 +15,21 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 from views import index
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index, name='main_home'),
-    url(r'^portfolio/', include('portfolio.urls'))
+
+    url(r'^portfolio/', include('portfolio.urls')),
+    url(r'^capstone/', include('capstone.urls')),
+
+    url(r'^login/$', auth_views.login, {
+        'template_name': 'login.html'}, name='login'),
+    url(r'^logout/$', auth_views.logout, {
+        'next_page': '/login/'}, name='logout')
 ]
+urlpatterns += staticfiles_urlpatterns()

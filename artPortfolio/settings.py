@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-APPS_ROOT = os.path.join(BASE_DIR, "apps")
+APPS_ROOT = os.path.join(BASE_DIR, 'apps/')
 os.sys.path.insert(0, APPS_ROOT)
 
 # Quick-start development settings - unsuitable for production
@@ -39,10 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
-
-INSTALLED_APPS += [
-    'portfolio'
 ]
 
 MIDDLEWARE = [
@@ -123,9 +119,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'artPortfolio/static/'),
+)
+
 try:
-        from local_settings import *
+    from settings_local import *
 except ImportError:
-        pass
+    pass

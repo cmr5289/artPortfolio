@@ -1,0 +1,23 @@
+.header{
+    padding: 2% 10% 2% 10%;
+    background-color: $header-color;
+    height: 100px;
+    color: $header-font-color;
+
+    p{
+        color: $header-font-color;
+        font-size: 1.33em;
+        @media screen and (max-width: $break-small){
+            font-size: 1em;
+        }
+    }
+
+    a{
+        color: $header-font-color;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $header-a-color;
+    }
+}
